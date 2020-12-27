@@ -181,13 +181,19 @@ margin-right: 10px;
 
 /* Футер */
 .page-footer {
-  display: flex;
-  flex-direction: column;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
 
   background: var(--sec-background-color);
+}
+
+.flex-footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer-address {
+  margin-right: 70px;
 }
 
 .requisites {
@@ -217,6 +223,50 @@ margin-right: 10px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.join {
+  width: 206px;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.footer-text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:206px;
+}
+
+.footer-links>.item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-links .link{
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
+.footer-links .link:hover,
+.footer-links .link:focus {
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  fill:  #ffffff;
+}
+
+
 
 /* Главный контент - Студия */
 .section-title {
