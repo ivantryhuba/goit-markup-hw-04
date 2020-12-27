@@ -165,7 +165,7 @@ align-items: center;
   line-height: 16px;
 
   color: var(--sec-text-color);
-  fill: var(--sec-text-color)
+  fill: var(--sec-text-color);
 
 }
 .contacts-header .link:hover,
@@ -404,15 +404,43 @@ margin-right: 10px;
 
 .clients-list {
   display: flex;
+  justify-content: center;
 }
 
-.clients-list {
-
-}
+.clients-list .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  width: 170px;
+  height: 90px;
+} 
 
 .clients-list .item:last-child {
   margin-right: 0;
 }
+
+.clients-list .link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+
+  color: var(--icon-color);
+  fill: var(--icon-color);
+}
+
+.clients-list .link:hover,
+.clients-list .link:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
+
 
 /* Главный контент - Портфолио */
 .portfolio-section {
