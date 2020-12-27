@@ -15,6 +15,10 @@ html{
   /* Основные цвета фона */
   --pri-background-color: #ffffff;
   --sec-background-color: #2f303a;
+  --hero-background-color: #C4C4C4;
+
+  /* Основные цвет иконок */
+  --icon-color: #AFB1B8;
 }
 
 /* Стили по тегам */
@@ -44,6 +48,7 @@ a {
   text-decoration: none;
 }
 
+/* Контейнер */
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -153,15 +158,24 @@ align-items: center;
 }
 
 .contacts-header .link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 
   color: var(--sec-text-color);
+  fill: var(--sec-text-color)
+
 }
 .contacts-header .link:hover,
 .contacts-header .link:focus {
+  fill: var(--accent-color);
   color: var(--accent-color);
+}
+
+.contact-icon {
+margin-right: 10px;
 }
 
 /* Футер */
@@ -215,11 +229,26 @@ align-items: center;
 }
 /* Герой */
 .hero {
+  text-align: center;
+  background-color: var(--hero-background-color);
+}
+
+.overlay {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/studio/Hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container-hero {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  
-  text-align: center;
-  background: var(--sec-background-color);
 }
 
 .hero-title {
@@ -365,6 +394,26 @@ align-items: center;
   color: var(--sec-text-color);
 }
 
+/* Постоянные клиенты */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background: var(--pri-background-color);
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-list {
+
+}
+
+.clients-list .item:last-child {
+  margin-right: 0;
+}
+
 /* Главный контент - Портфолио */
 .portfolio-section {
   padding-top: 94px;
@@ -443,6 +492,11 @@ align-items: center;
   margin-bottom: 30px;
   margin-right: 30px;
   text-align: left;
+}
+
+.progects-list .item:hover,
+.progects-list .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .progects-list .item:nth-child(3n) {
