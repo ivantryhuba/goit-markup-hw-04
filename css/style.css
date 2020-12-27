@@ -17,8 +17,9 @@ html{
   --sec-background-color: #2f303a;
   --hero-background-color: #C4C4C4;
 
-  /* Основные цвет иконок */
+  /* Основные цвета иконок */
   --icon-color: #AFB1B8;
+  --icon-background-color: #F5F4FA;
 }
 
 /* Стили по тегам */
@@ -325,6 +326,17 @@ margin-right: 10px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--sec-text-color);
+}
+
+.features-svg {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: var(--icon-background-color);
+
+  border-radius: 4px;
 }
 
 /* Чем мы занимаемся */
