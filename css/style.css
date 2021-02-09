@@ -20,7 +20,7 @@ html {
   text-decoration: none;
 }
 
-/* Переменные */
+/* ------Переменные------ */
 :root {
   /* Основные цвета текста */
   --pri-text-color: #212121;
@@ -69,7 +69,7 @@ body {
   margin: 0 auto;
 }
 
-/* Лого */
+/* ------Лого------- */
 .logo-web {
   color: #2196f3;
 }
@@ -110,7 +110,7 @@ body {
   color: var(--pri-text-color);
 }
 
-/* Хедер */
+/* ------Хедер------ */
 .page-header {
   border-bottom: #e5e5e5 1px solid;
   background: var(--pri-background-color);
@@ -191,7 +191,7 @@ body {
   color: var(--accent-color);
 }
 
-/* Футер */
+/* ------Футер------ */
 .page-footer {
   background-color: var(--footer-background-color);
 }
